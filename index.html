@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me One Page Photography</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">Me One Page </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#photos">Photos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<section id="home" class="parallax">
+    <div class="container text-center">
+        <h1>INI ADALAH HALAMAN ONE PAGE  </h1>
+        <P> Jika Anda Tertarik Kontak Saya Dibawah Ini !!!!</P>
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+    </div>
+</section>
+
+    <section id="photos" class="container py-5">
+        <h2 class="text-center mb-4">Photos</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <a href="aset/P1.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P1.jpeg" alt="Description 1">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P2.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P2.jpeg" alt="Description 2">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P3.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P3.jpeg" alt="Description 3">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P4.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P4.jpeg" alt="Description 4">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P8.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P8.jpeg" alt="Description 5">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P6.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P6.jpeg" alt="Description 6">
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="aset/P7.jpeg" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="aset/P7.jpeg" alt="Description 7">
+                </a>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="container py-5">
+    <h2 class="text-center mb-4"></h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="aset/P9.jpeg" class="img-fluid" alt="About Image">
+        </div>
+        <div class="col-md-6">
+            <h3>Siapa saya ?</h3>
+            <p> Halo! Saya Aditya Wirajaya Permono, seorang pengembang yang bersemangat dengan kecintaan untuk
+                membuat aplikasi web dan mobile. Dengan latar belakang Teknologi Informasi, saya telah mengasah
+                keterampilan saya dalam berbagai bahasa pemrograman dan kerangka kerja. Saya menikmati belajar 
+                teknologi baru dan mengambil proyek-proyek menantang yang mendorong batas kemampuan saya.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="notification"></div>
+</section>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
